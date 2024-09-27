@@ -1,0 +1,169 @@
+/* Kind of Reset stuff */
+/* Ensures consistent margin, padding, and box-sizing across elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom font-face declarations for various fonts used in the design */
+@font-face {
+    font-family: punk-kid;
+    src: url(../fonts/punk\ kid.ttf);
+}
+
+@font-face {
+    font-family: wide-awake-black;
+    src: url(../fonts/wide-awake.black.ttf);
+}
+
+@font-face {
+    font-family: TrashHand;
+    src: url(../fonts/TrashHand.TTF);
+}
+
+@font-face {
+    font-family: PixelCrash;
+    src: url(../fonts/PIXELCRASH\ TRIAL.otf);
+}
+
+@font-face {
+    font-family: ArtsyMorning;
+    src: url(../fonts/artsy-morning.regular.otf);
+}
+
+@font-face {
+    font-family: RoseMartin;
+    src: url(../fonts/artsy-morning.regular.otf);
+}
+
+/* Header Styling */
+/* Styles the header with flex layout, bright colors, padding, and shadows */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f8ea32; /* Bright yellow background */
+    color: #de4b50; /* Bright red for text contrast */
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 5px solid #de4b50; /* Red bottom border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+/* Styling for the main song title */
+header h1 {
+    font-family: 'punk-kid', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #b22929; /* Dark red */
+    text-shadow: 2px 2px 5px rgba(222, 75, 80, 0.8); /* Red text shadow for dramatic effect */
+}
+
+/* Styling for the artist's name */
+header h2 {
+    font-family: 'punk-kid', sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #0a0a0a; /* Dark text */
+    margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(22, 19, 20, 0.8); /* Subtle black shadow */
+}
+
+/* Masthead styling */
+/* The large banner section with a background image */
+.masthead {
+    background-image: url("../img/background-panel.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    text-align: center;
+    padding: 20px;
+    background-color: #111; /* Backup dark color */
+}
+
+/* Styles for the image inside the masthead */
+.masthead img {
+    max-width: 100%; /* Responsive width */
+    height: auto;
+    border: 5px solid #ff4500; /* Orange border around the image */
+}
+
+/* Lyrics Section Styling */
+/* Background with a gradient, flexbox layout, and some padding */
+.lyrics {
+    background-image: linear-gradient(rgb(248, 234, 50), rgb(222, 75, 80)); /* Yellow to red gradient */
+    padding: 0 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #eee; /* Light text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Strong shadow for depth */
+}
+
+/* Styling for the lyrics section title */
+.lyrics h3 {
+    text-align: center;
+    font-family: 'wide-awake-black', sans-serif;
+    font-size: 4rem;
+    color: #b22929; /* Dark red */
+    margin-bottom: 15px;
+}
+
+/* Styling for the verse and chorus subheadings */
+.subheading {
+    padding-right: 50px;
+    font-family: 'RoseMartin', serif !important;
+    font-size: 0.8em; /* Smaller size */
+}
+
+/* Styling for the word "creep" */
+.creep {
+    font-family: 'PixelCrash', serif !important;
+    font-size: 1.5em; /* Larger size */
+    color: #b22929; /* Dark red */
+}
+
+/* Styling for the word "wish" */
+.wish {
+    font-family: 'ArtsyMorning', serif !important;
+    font-weight: bolder; /* Bold font */
+    font-size: 1.4em; /* Larger size */
+}
+
+/* General paragraph styling for lyrics */
+.lyrics p {
+    color: #111; /* Dark text color */
+    font-family: 'TrashHand', serif;
+    font-size: 1.8rem;
+    word-spacing: 13px; /* Increased word spacing */
+    line-height: 1.8; /* Increased line height */
+    letter-spacing: 0.5px; /* Slight letter spacing */
+    white-space: pre-line; /* Preserves line breaks */
+    margin: 20px 0;
+    max-width: 90%; /* Constrains the width of the text */
+}
+
+/* Align odd paragraphs to the left */
+.lyrics p:nth-child(odd) {
+    text-align: left;
+    align-self: flex-start; /* Aligns text to the left side */
+}
+
+/* Align even paragraphs to the right */
+.lyrics p:nth-child(even) {
+    text-align: right;
+    align-self: flex-end; /* Aligns text to the right side */
+}
+
+/* Footer Styling */
+/* Styles the footer with dark colors and a subtle orange border */
+footer {
+    background-color: #111; /* Dark background */
+    color: #eee; /* Light text color */
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-top: 2px solid #ff4500; /* Orange top border */
+}
