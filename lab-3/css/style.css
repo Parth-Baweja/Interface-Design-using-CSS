@@ -1,0 +1,77 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f4f5;
+}
+svg{
+    width: 200px;
+    height: 100px;
+}
+/* Centering the svg container */
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Button Style */
+.svg-effect-btn {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    color: #120527;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    border: 2px solid #120527;
+    border-radius: 10px;
+}
+
+/* SVG Style */
+.svg-effect-btn svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Rectangle Styling */
+.svg-effect-btn rect {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #120527;
+    stroke-width: 4;
+    transition: all 0.4s ease; /* Initial transition */
+}
+
+/* Cool Effect on Hover */
+.svg-effect-btn:hover rect {
+    fill: rgba(18, 5, 39, 0.1); /* Light fill on hover */
+    stroke-width: 30px; /* Increase the stroke width for the ripple */
+}
+
+/* Hover Text Styling */
+.svg-effect-btn:hover {
+    background-color: #120527;
+    color: #f8f8f8;
+}
