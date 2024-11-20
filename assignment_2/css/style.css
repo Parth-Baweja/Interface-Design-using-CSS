@@ -1,10 +1,11 @@
+/* Kind of reset.css */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* overflow-x: hidden; */
 }
-
+/* Custom fonts */
 @font-face {
     font-family: StudyClash;
     src: url("../fonts/Study\ Clash.otf");
@@ -18,7 +19,7 @@
 body {
     background-color: whitesmoke;
 }
-
+/*Default styling for other elements*/
 p,
 a,
 li,
@@ -29,7 +30,7 @@ span {
     font-size: 1.2em;
     text-decoration: none;
 }
-
+/* header style  */
 header {
     /* background-color: transparent; */
     
@@ -45,6 +46,7 @@ header {
     transition: all .25s linear;
     padding: 0 25px;
 }
+/* scrolled header */
 .scrolledHeader{
     position: fixed;
     background-color: #f6e500;
@@ -105,7 +107,7 @@ header nav menu li::after {
 header nav menu li:hover::after {
     width: 100%;
 }
-
+/*Background image container styling */
 .bgImageContainer {
     position: relative;
     /* top: 0; */
@@ -157,7 +159,7 @@ header nav menu li:hover::after {
     color: rgb(18, 18, 18);
 }
 
-/** svg button **/
+/** svg button styles**/
 .svg-btn {
     font-family: "Paytone One", sans-serif;
     width: 200px;
@@ -198,7 +200,7 @@ header nav menu li:hover::after {
 .svg-btn:hover {
     background-position: 100px;
 }
-
+/*Main section styling*/
 main {
     overflow-x: hidden;
     /* height: 100vh; */
@@ -209,7 +211,7 @@ main {
     /* justify-content: center;
     align-items: center; */
 }
-
+/*About us(promotion section) styling */
 .aboutUs {
 
     padding-bottom: 100px;
@@ -290,7 +292,7 @@ main {
     height: 100%;
 
 }
-
+/*animations getting triggered by js*/
 .slide-right {
     position: relative;
     transform: translateX(-150px);
@@ -384,6 +386,7 @@ main {
         flex-direction: column;
     }
 }
+/*product section styling*/
 .products {
     background-image: url("../assets/main_bg.webp");
     font-family: "StudyClash", sans-serif;
@@ -476,7 +479,7 @@ main {
     padding: 10px;
     font-family: "StudyClash", sans-serif;
 }
-
+/*the sign up form styling*/
 .sign-up-form::before {
     background: url("../assets/sign-up-form-waves.svg") center 0 repeat-x;
     content: "";
@@ -726,7 +729,7 @@ main {
     opacity: 0.8;
 }
 
-
+/*other js triggered animations*/
 .slide-left {
     position: relative;
     left: 10%;
